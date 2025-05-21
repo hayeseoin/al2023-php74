@@ -12,9 +12,9 @@ cd "$(dirname "$0")" || {
   exit 1
 }
 
-dnf install -y libicu libxslt
+dnf install -y libicu libxslt tar
 
-tar -xvf /opt/al2023-php74/php-7.4.tar.gz -C /usr/local/
+tar -xvf php-7.4.tar.gz -C /usr/local/
 ln -s /usr/local/php-7.4/bin/php /usr/bin/php
 ln -s /usr/local/php-7.4/bin/phpize /usr/bin/phpize
 ln -s /usr/local/php-7.4/bin/php-config /usr/bin/php-config
