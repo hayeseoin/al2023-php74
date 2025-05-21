@@ -21,5 +21,6 @@ ln -s /usr/local/php-7.4/bin/phpize /usr/bin/phpize
 ln -s /usr/local/php-7.4/bin/php-config /usr/bin/php-config
 
 cp files/php74-fpm.service /etc/systemd/system/php-fpm.service
+systemctl daemon-reload
 systemctl enable php-fpm.service --now
 
