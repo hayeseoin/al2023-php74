@@ -12,7 +12,8 @@ cd "$(dirname "$0")" || {
   exit 1
 }
 
-dnf install -y libicu libxslt tar
+sudo dnf install -y libicu libxslt oniguruma libedit libuuidx
+sudo dnf install -y tar wget
 
 tar -xvf php-7.4.tar.gz -C /usr/local/
 ln -s /usr/local/php-7.4/bin/php /usr/bin/php
